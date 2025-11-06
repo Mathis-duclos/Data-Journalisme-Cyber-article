@@ -1,0 +1,120 @@
+/* Fichier article.css */
+
+/* Styles pour la page entière de l'article */
+.article-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+article {
+    width: 70%; /* L'article prend plus de place */
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Titre et métadonnées */
+.article-title {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Images et légendes */
+.article-image {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-image figcaption {
+    font-size: 0.9em;
+    color: #95a5a6;
+    margin-top: 10px;
+}
+
+/* Contenu de l'article */
+.article-content h2 {
+    color: #3498db; /* Bleu */
+    border-left: 5px solid #e74c3c; /* Barre rouge à gauche */
+    padding-left: 10px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.article-content p {
+    line-height: 1.7; /* Améliore la lisibilité */
+    margin-bottom: 20px;
+}
+
+/* Citation (Blockquote) */
+blockquote {
+    background-color: #ecf0f1; /* Gris clair */
+    border-left: 5px solid #f39c12; /* Bordure orange */
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* Colonne latérale */
+.related-articles {
+    width: 25%; /* Prend moins de place */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.related-articles h3 {
+    color: #3498db;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.related-articles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-articles li {
+    margin-bottom: 10px;
+}
+
+.related-articles a {
+    color: #34495e;
+    text-decoration: none;
+}
+
+.related-articles a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Media Query pour petits écrans */
+@media (max-width: 768px) {
+    .article-page {
+        flex-direction: column; /* Empiler les éléments */
+    }
+
+    article, .related-articles {
+        width: 100%; /* Reprendre toute la largeur */
+    }
+}
