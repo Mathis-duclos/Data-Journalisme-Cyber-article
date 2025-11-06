@@ -1,0 +1,98 @@
+/* Fichier about.css */
+
+/* Conteneur principal */
+.about-page {
+    max-width: 900px;
+    margin: 40px auto; /* Centrer et ajouter de l'espace */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Titres de section */
+.section-title {
+    text-align: center;
+    color: #e74c3c; /* Rouge/Orange */
+    font-size: 2em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Paragraphes généraux */
+.about-section p {
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* --- Section Équipe (Mise en page Flexbox) --- */
+.team-section {
+    padding: 20px 0;
+}
+
+.team-section .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des membres pour mise en page en ligne */
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-member {
+    width: 45%; /* Pour afficher deux colonnes */
+    padding: 15px;
+    border: 1px dashed #3498db;
+    border-radius: 5px;
+}
+
+.team-member img {
+    width: 150px; /* Taille pour les photos d'équipe */
+    height: 150px;
+    border-radius: 50%; /* Pour faire des photos rondes */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    color: #3498db;
+    margin: 5px 0;
+}
+
+.team-member .role {
+    font-weight: bold;
+    color: #f39c12; /* Orange */
+    margin-bottom: 10px;
+}
+
+/* Section Valeurs */
+.values-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values-section li {
+    background-color: #ecf0f1; /* Fond gris clair */
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Media Query pour petits écrans */
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%; /* Les membres s'empilent sur mobile */
+    }
+}
