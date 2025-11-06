@@ -1,0 +1,52 @@
+/* Fichier contact.css (Version simplifiée) */
+
+/* Conteneur principal */
+.contact-page {
+    max-width: 700px; /* Légèrement plus petit pour centrer un bloc unique */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Suppression du Flexbox, on traite tout comme un bloc unique centré */
+.contact-page.simple {
+    display: block;
+}
+
+/* Informations de Contact */
+.contact-info {
+    width: 100%; /* Prend toute la largeur du conteneur principal */
+    padding: 0; /* Pas de padding interne si le conteneur principal en a déjà */
+    background-color: transparent; /* Retire le fond gris clair */
+    box-shadow: none; /* Retire l'ombre */
+}
+
+.contact-info h2 {
+    color: #3498db;
+    border-bottom: 2px solid #e74c3c; /* Bordure rouge pour le titre */
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.contact-info .details {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.contact-info .details strong {
+    color: #e74c3c; /* Rouge pour les étiquettes */
+}
+
+/* Ajout d'un style pour les liens d'email */
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Suppression de la section de formulaire et de la Media Query */
