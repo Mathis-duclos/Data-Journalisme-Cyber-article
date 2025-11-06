@@ -2,12 +2,13 @@
 
 /* Conteneur principal */
 .about-page {
-    max-width: 900px;
-    margin: 40px auto; /* Centrer et ajouter de l'espace */
+    max-width: 1200px;
+    margin: 40px auto; 
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 /* Titres de section */
@@ -19,80 +20,110 @@
     border-bottom: 2px solid #ddd;
     margin-top: 40px;
     margin-bottom: 30px;
+    display: inline-block;
 }
 
 /* Paragraphes généraux */
 .about-section p {
     line-height: 1.7;
     text-align: justify;
-    margin-bottom: 15px;
+    max-width: 900px;
+    margin: 0 auto 15px auto;
     color: #555;
 }
 
-/* --- Section Équipe (Mise en page Flexbox) --- */
+/* --- Section Équipe --- */
 .team-section {
     padding: 20px 0;
 }
 
-.team-section .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Conteneur des membres pour mise en page en ligne */
-.team-section {
+.team-grid {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 30px;
+    margin-top: 30px;
 }
 
 .team-member {
-    width: 45%; /* Pour afficher deux colonnes */
-    padding: 15px;
-    border: 1px dashed #3498db;
-    border-radius: 5px;
+    /* Style d'une carte d'équipe */
+    width: 30%; 
+    min-width: 250px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .team-member img {
-    width: 150px; /* Taille pour les photos d'équipe */
-    height: 150px;
-    border-radius: 50%; /* Pour faire des photos rondes */
+    /* Style de l'image de profil */
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%; /* Image ronde */
     object-fit: cover;
-    margin-bottom: 10px;
+    border: 3px solid #3498db; /* Bordure pour mettre en valeur */
+    margin-bottom: 15px;
 }
 
 .team-member h3 {
     color: #3498db;
     margin: 5px 0;
+    font-size: 1.5em;
 }
 
 .team-member .role {
     font-weight: bold;
     color: #f39c12; /* Orange */
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    display: block;
 }
 
-/* Section Valeurs */
+.team-member p {
+    text-align: center;
+    font-style: italic;
+}
+
+/* --- Section Valeurs --- */
+.values-section {
+    margin-top: 50px;
+}
+
 .values-section ul {
     list-style: none;
     padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .values-section li {
-    background-color: #ecf0f1; /* Fond gris clair */
+    background-color: #ecf0f1; 
     border-left: 5px solid #3498db;
     padding: 15px;
     margin-bottom: 15px;
     font-size: 1.1em;
+    width: 30%;
+    min-width: 200px;
+    text-align: left;
 }
 
 /* Media Query pour petits écrans */
 @media (max-width: 768px) {
-    .team-member {
-        width: 100%; /* Les membres s'empilent sur mobile */
+    .team-member, .values-section li {
+        width: 100%; /* Les éléments s'empilent sur mobile */
+    }
+    
+    .values-section ul {
+        flex-direction: column;
     }
 }
