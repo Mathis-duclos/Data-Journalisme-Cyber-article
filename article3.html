@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybercriminalité 2.0 : l’IA, alliée ou ennemie ? | Cyber @rticle</title>
-    <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="article.css"> </head>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="article.css"> 
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
 <body>
 
     <header>
@@ -19,26 +23,61 @@
     </header>
 
     <main class="article-page">
-        <article>
+        <article class="unique-style-3">
             <h1 class="article-title">Cybercriminalité 2.0 : l’IA, alliée ou ennemie ?</h1>
-            <p class="article-meta">Publié par <strong>Rose Pereira</strong> le 06 Novembre 2025</p>
+            <p class="article-meta">Publié par <strong>Rose Pereira</strong> le 05 Novembre 2025</p>
 
             <section class="article-content">
+                <h2>1. Avant l’IA (jusqu’en ~2019)</h2>
+                <p>Les attaques étaient majoritairement humaines : phishing, ransomware, DDoS… L’IA n’était pas encore utilisée massivement, ni pour attaquer ni pour se défendre. La défense reposait surtout sur des firewalls et des systèmes de détection manuels.</p>
+
+                <div class="stats-container">
+                    <div class="stat">
+                        <div class="counter" data-target="69000">0</div>
+                        <p>Incidents majeurs (France)</p>
+                    </div>
+                    <div class="stat">
+                        <div class="counter" data-target="90000">0</div>
+                        <p>Signalements d’attaques (France)</p>
+                    </div>
+                    <div class="stat">
+                        <div class="counter" data-target="13">0</div>
+                        <p>E-mails malveillants (milliards/jour)</p>
+                    </div>
+                    <div class="stat">
+                        <div class="counter" data-target="108">0</div>
+                        <p>Temps moyen de détection d’une attaque (jours)</p>
+                    </div>
+                </div>
+
+                <h2>2. L’ère de l’IA offensive et défensive (2020–2024)</h2>
+                <p>L’arrivée de l’IA a explosé la rapidité et la personnalisation des attaques (phishing crédible, deepfakes, malwares générés automatiquement). En 2024, 1 attaque sur 6 implique un outil IA. Du côté défense, l’IA analyse les logs, repère les anomalies en temps réel, et bloque les connexions suspectes, divisant le temps de détection par 5 à 10.</p>
+
+                <div class="stats-container">
+                    <div class="stat">
+                        <div class="counter" data-target="2100">0</div>
+                        <p>Incidents majeurs (France)</p>
+                    </div>
+                    <div class="stat">
+                        <div class="counter" data-target="700000">0</div>
+                        <p>Signalements d’attaques (France)</p>
+                    </div>
+                    <div class="stat">
+                        <div class="counter" data-target="21">0</div>
+                        <p>Temps moyen de détection (jours)</p>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <p><strong>Lecture du graphique :</strong> Chaque axe correspond à un critère : vitesse, efficacité, accessibilité, innovation et adaptation. L’IA offensive est plus rapide et innovante, tandis que l’IA défensive est plus efficace et mieux adaptée.</p>
+                </div>
+
+                <div class="graph-container">
+                    <div id="chart_div" style="width: 100%; height: 400px;"></div>
+                </div>
                 
-                <h2>Introduction</h2>
-                <p>Depuis des millénaires, l'homme a levé les yeux vers le ciel, s'interrogeant pourquoi Elia aime les chats.</p>
-
-                <div><strong>METTRE LE GRAPH ICI OK?</strong></div>
-
-                <p>La clé du savoir réside dans les ronronnements apaisants des chats. Ces sons, produits par la vibration des cordes vocales, ont un effet calmant sur l'esprit humain.</p>
-
-                <blockquote>
-                    <p>Les ronronnements des chats peuvent réduire le stress et l'anxiété chez les humains.</p>
-                </blockquote>
-
-                <p>Lorsqu'on observe les chats, on est souvent frappé par leur grâce et leur agilité. Mais il y a aussi un mystère qui les entoure : pourquoi ces créatures semblent-elles si indépendantes et énigmatiques ?</p>
-
-                <p>C'est tout pour cet article. Nous espérons que vous avez appris quelque chose de nouveau !</p>
+                <h2>Conclusion</h2>
+                <p>En 2025, la progression des IA offensives est plus rapide, car moins régulée, mais les IA défensives gagnent en efficacité grâce aux investissements des grandes entreprises. Cette lutte acharnée instaure une “guerre d’adaptation” permanente entre IA d’attaque et IA de défense.</p>
             </section>
         </article>
 
@@ -48,18 +87,86 @@
                 <li><a href="article1.html">La Menace Ciblée : où les cybercriminels gagnent le plus ?</a> - Mathis Duclos</li>
                 <li><a href="article2.html">Les grandes entreprises ne protège pas assez nos données ?</a> - Elia Rossi</li>
             </ul>
-            </br>
+        </br>
             <h3>Sources</h3>
             <ul>
-                <li>aa</li>
-                <li>bb</li>
+                <li>ENEA</li>
+                <li>Microsoft</li>
+                <li>World Economic Forum</li>
             </ul>
         </aside>
     </main>
 
     <footer>
-        <p>&copy; 2025 Cyber @rticle- Tous droits réservés.</p>
+        <p>&copy; 2025 Cyber @rticle - Tous droits réservés.</p>
     </footer>
 
+    <script>
+        // Animation des compteurs (légèrement ajustée pour la propreté)
+        const counters = document.querySelectorAll('.counter');
+        const animate = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const speed = 100; // Vitesse de l'animation
+            const increment = target / speed;
+
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count).toLocaleString('fr-FR');
+                    requestAnimationFrame(updateCount);
+                } else {
+                    // Finalisation des valeurs complexes (K, Milliards, Jours)
+                    let finalValue = target.toLocaleString('fr-FR');
+                    if(target === 69000) finalValue = "69 K";
+                    if(target === 13) finalValue = "13 Milliards";
+                    if(target === 108 || target === 21) finalValue = `${target} Jours`;
+                    
+                    counter.innerText = finalValue;
+                }
+            };
+            requestAnimationFrame(updateCount);
+        };
+        
+        // Démarrer l'animation
+        counters.forEach(counter => animate(counter));
+
+
+        // SCRIPT GOOGLE CHARTS - CORRIGÉ POUR LE CHARGEMENT
+        
+        // Définition de la fonction de dessin du graphique
+        function drawChart() {
+            // Vérifie que l'élément conteneur existe
+            if (!document.getElementById('chart_div')) return;
+            
+            var data = google.visualization.arrayToDataTable([
+                ['Critere', 'IA Offensive', 'IA Defensive'],
+                ['Vitesse', 5, 4.6],
+                ['Efficacite', 3.2, 4.4],
+                ['Accessibilite', 4, 3],
+                ['Innovation', 4, 3.7],
+                ['Adaptation 2025', 4.5, 4.7]
+            ]);
+
+            var options = {
+                title: 'Comparaison IA Offensive vs IA Defensive',
+                height: 400,
+                width: '100%',
+                vAxis: { minValue: 0, maxValue: 5, format: '0.0' },
+                hAxis: { slantedText: true, slantedTextAngle: 35 },
+                colors: ['#FF69B4', '#8A2BE2'],
+                pointSize: 8,
+                curveType: 'function'
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(function() {
+            window.onload = drawChart; 
+        });
+
+    </script>
 </body>
 </html>
