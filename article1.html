@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de l'Article | Cyber @rticle</title>
+    <title>La menace ciblée : où les cybercriminels gagnent le plus ? | Cyber @rticle</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="article.css"> </head>
+    <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="article.css">
+    
+    <style>
+        .acronym-js {
+            cursor: help; 
+            border-bottom: 1px dotted #888; 
+            position: relative; 
+            display: inline-block;
+            /* NOUVEAU : Changer la couleur de l'acronyme pour ressembler à un lien */
+            color: #7c3aed; 
+            text-decoration: none; /* S'assurer qu'il n'y a pas de soulignement par défaut */
+        }
+
+        /* Ajouter une couleur plus foncée au survol pour un effet interactif */
+        .acronym-js:hover {
+            color: #f39c12; 
+        }
+        
+        .tooltip-js {
+            visibility: hidden; 
+            opacity: 0;
+            position: absolute;
+            bottom: 150%; 
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            min-width: 200px;
+            transition: opacity 0.3s, visibility 0.3s;
+            white-space: normal; 
+        }
+
+        /* Affichage de l'info-bulle au survol */
+        .acronym-js:hover .tooltip-js {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
 <body>
 
     <header>
@@ -29,7 +73,7 @@
                 <p>La cybercriminalité est avant tout une question de gain financier, qui dépend largement de l'efficacité du rançongiciel (ransomware). Les cybercriminels recherchent les entités qui promettent les plus grandes rançons ou qui offrent la plus faible résistance à l'infiltration.</p>
                 <div class="flourish-embed flourish-chart" data-src="visualisation/26089484"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26089484/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 
-                <p>L'analyse de la fréquence des attaques de l'ENISA (Agence de l’Union européenne pour la cybersécurité) révèle un ciblage intense des services publics (19 % des incidents), ce qui coincide avec puisque 85% des attaques dans ce secteur sont un succès. Le secteur  de la Finance connaît également une forte augmentation des attaques par rançongiciel (+64 % en 2023) paradoxallement au fait qu'à peine la moitié des attaques visant ce secteur ont abouti.</p>
+                <p>L'analyse de la fréquence des attaques de la <span class="acronym-js" data-title="Agence de l’Union européenne pour la cybersécurité">ENISA</span> révèle un ciblage intense des services publics (19 % des incidents), ce qui coïncide avec puisque 85% des attaques dans ce secteur sont un succès. Le secteur  de la Finance connaît également une forte augmentation des attaques par rançongiciel (+64 % en 2023) paradoxalement au fait qu'à peine la moitié des attaques visant ce secteur ont abouti.</p>
 
                 <blockquote>
                     <p>La France était le 3e pays ayant subi le plus de violation de données en 2022</p>
@@ -43,7 +87,7 @@
                 <div class="flourish-embed flourish-chart" data-src="visualisation/26070086"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26070086/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
                 <div class="flourish-embed flourish-chart" data-src="visualisation/26070242"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26070242/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
                 
-                <p>Ces chiffres soulignent une efficacité redoutable contre les secteurs critiques. En 2017, 92 % des entreprises françaises affirmaient avoir subi au moins une cyberattaque dans l’année, selon les données du baromètre annuel du CESIN (Club des experts de la sécurité de l’information et du numérique). Une protection proactive et des systèmes de défense adaptés sont cruciaux pour assurer la continuité des activités face à cette économie criminelle en constante expansion.</p>
+                <p>Ces chiffres soulignent une efficacité redoutable contre les secteurs critiques. En 2017, 92 % des entreprises françaises affirmaient avoir subi au moins une cyberattaque dans l’année, selon les données du baromètre annuel du <span class="acronym-js" data-title="Club des experts de la sécurité de l’information et du numérique">CESIN</span>. Une protection proactive et des systèmes de défense adaptés sont cruciaux pour assurer la continuité des activités face à cette économie criminelle en constante expansion.</p>
             </section>
         </article>
 
@@ -73,12 +117,12 @@
                 <li>DataGouv - Statistiques et impacts des cyberattaques sur les entreprises en France</li>
                 </br>
                 <h4>Agences Internationales et Analyses de Vulnérabilité (Europe & Monde):</h4>
-                <li>ENISA (Agence de l'UE pour la cybersécurité) – Threat Landscape 2023</li>
+                <li><span class="acronym-js" data-title="Agence de l’Union européenne pour la cybersécurité">ENISA</span> – Threat Landscape 2023</li>
                 <li>Sophos – State of Ransomware 2024</li>
                 <li>Barracuda Networks - Rapport 2023 sur les ransomwares</li>
                 <li>Positive Technologies</li>
                 <li>Semperis - Rapport sur les risques liés aux ransomwares </li>
-                <li>ENISA - Threat Landscape 2023</li>
+                <li><span class="acronym-js" data-title="Agence de l’Union européenne pour la cybersécurité">ENISA</span> - Threat Landscape 2023</li>
                 </br>
                 <h4>Études Spécifiques et Sectorielles :</h4>
                 <li>Global Security Mag (Étude 2024 sur l'Industrie)</li>
@@ -94,5 +138,32 @@
         <p>&copy; 2025 Cyber @rticle - Tous droits réservés.</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const acronyms = document.querySelectorAll('.acronym-js');
+
+            acronyms.forEach(acronym => {
+                const title = acronym.getAttribute('data-title');
+                
+                // 1. Création de l'élément info-bulle
+                const tooltip = document.createElement('span');
+                tooltip.classList.add('tooltip-js');
+                tooltip.textContent = title;
+                
+                // 2. Insertion de l'info-bulle dans l'acronyme
+                acronym.appendChild(tooltip);
+
+                // Gérer l'affichage pour les appareils tactiles ou pour l'accessibilité
+                // (le survol est déjà géré par le CSS : .acronym-js:hover .tooltip-js)
+                acronym.addEventListener('click', function(e) {
+                    // Pour éviter de suivre un lien si l'acronyme était dans un <a>
+                    if (this.parentNode.tagName === 'A') {
+                       e.preventDefault(); 
+                    }
+                    this.classList.toggle('active'); // La classe 'active' est gérée par le CSS
+                });
+            });
+        });
+    </script>
 </body>
 </html>
