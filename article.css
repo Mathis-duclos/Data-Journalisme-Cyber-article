@@ -187,3 +187,39 @@ blockquote {
     color: #7f8c8d;
     font-style: italic;
 }
+
+/* Styles pour les mots cliquables */
+    .clickable-term {
+      color: #3498db;
+      cursor: pointer;
+      text-decoration: underline;
+      position: relative;
+    }
+
+    /* Styles pour la popup */
+    .popup {
+      position: absolute;
+      background: #fff;
+      border: 1px solid #3498db;
+      padding: 0.8rem 1rem;
+      border-radius: 0.4rem;
+      box-shadow: 0 2px 8px rgba(124, 58, 237, 0.5);
+      width: 260px;
+      top: 1.8rem;
+      left: 0;
+      z-index: 10;
+      font-size: 0.9rem;
+      color: #333;
+      display: none;
+    }
+
+    /* Petite flèche au-dessus de la popup */
+    .popup::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 10px;
+      border-width: 0 8px 8px 8px;
+      border-style: solid;
+      border-color: transparent transparent #3498db  transparent;
+    }

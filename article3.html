@@ -29,29 +29,46 @@
             <p class="article-meta">Publié par <strong>Rose Pereira</strong> le 05 Novembre 2025</p>
 
             <section class="article-content">
-                <h2>1. Avant l’IA (jusqu’en ~2019)</h2>
-                <p>Les attaques étaient majoritairement humaines : phishing, ransomware, DDoS… L’IA n’était pas encore utilisée massivement, ni pour attaquer ni pour se défendre. La défense reposait surtout sur des firewalls et des systèmes de détection manuels.</p>
+                <div class="highlight">
+                    Propulsée au cœur de la cybersécurité, l’intelligence artificielle joue un double jeu : alliée des pirates comme des défenseurs. Son rôle suscite autant d’espoir que d’inquiétude.
+                </div>
+            
+                <h2>1. Avant l’IA (en 2019)</h2>
+                    <p>
+                        Les attaques étaient majoritairement humaines : 
+                        <span class="clickable-term" data-term="phishing">phishing
+                        <span class="popup">Phishing : technique d’hameçonnage visant à récupérer des informations personnelles en se faisant passer pour une entité fiable.</span>
+                        </span>, 
+                        <span class="clickable-term" data-term="ransomware">ransomware
+                        <span class="popup">Ransomware : logiciel malveillant qui bloque l’accès à un système ou des données jusqu’à ce qu’une rançon soit payée.</span>
+                        </span>, 
+                        <span class="clickable-term" data-term="DDoS">DDoS
+                        <span class="popup">DDoS : attaque par déni de service distribué visant à rendre un service indisponible en saturant ses ressources.</span>
+                        </span>… L’IA n’était pas encore utilisée massivement, ni pour attaquer ni pour se défendre. La défense reposait surtout sur des firewalls et des systèmes de détection manuels.
+                    </p>
 
                 <div class="stats-container">
                     <div class="stat">
                         <div class="counter" data-target="69">0</div>
-                        <p>Incidents majeurs (France)</p>
-                    </div>
+                            <p><span id="popup-trigger" class="clickable">Incidents majeurs = problème de sécurité qui perturbe gravement un système ou un service, souvent causé par une attaque informatique (France)</span></p>
+                        </div>
                     <div class="stat">
                         <div class="counter" data-target="90000">0</div>
-                        <p>Signalements d’attaques (France)</p>
-                    </div>
+                            <p>Signalements d’attaques (France)</p>
+                        </div>
                     <div class="stat">
                         <div class="counter" data-target="13">0</div>
-                        <p>E-mails malveillants (milliards/jour)</p>
+                        <div class="amount">Milliards</div>
+                            <p>E-mails malveillants par jour (monde)</p>
                     </div>
                     <div class="stat">
                         <div class="counter" data-target="108">0</div>
-                        <p>Temps moyen de détection d’une attaque (jours)</p>
+                        <div class="amount">jours</div>
+                            <p>Temps moyen de détection d’une attaque (monde) </p>
                     </div>
                 </div>
 
-                <h2>2. L’ère de l’IA offensive et défensive (2020–2024)</h2>
+                <h2>2. L’ère de l’IA offensive et défensive (depuis 2020)</h2>
                 <p>L’arrivée de l’IA a explosé la rapidité et la personnalisation des attaques (phishing crédible, deepfakes, malwares générés automatiquement). En 2024, 1 attaque sur 6 implique un outil IA. Du côté défense, l’IA analyse les logs, repère les anomalies en temps réel, et bloque les connexions suspectes, divisant le temps de détection par 5 à 10.</p>
 
                 <div class="stats-container">
@@ -65,20 +82,30 @@
                     </div>
                     <div class="stat">
                         <div class="counter" data-target="21">0</div>
-                        <p>Temps moyen de détection (jours)</p>
+                        <div class="amount">jours</div>
+                        <p>Temps moyen de détection (monde)</p>
                     </div>
                 </div>
 
-                <div class="highlight">
-                    <p><strong>Lecture du graphique :</strong> Chaque axe correspond à un critère : vitesse, efficacité, accessibilité, innovation et adaptation. L’IA offensive est plus rapide et innovante, tandis que l’IA défensive est plus efficace et mieux adaptée.</p>
+                <div class="text-sources">
+                    Sources : Agence nationale de la sécurité des systèmes d’information (ANSSI), Rapport Microsoft Digital Defense, World Economic Forum 2024
                 </div>
 
                 <div class="graph-container">
-                    <div id="chart_div" style="width: 100%; height: 400px;"></div>
+                    <div id="chart_div" style="width: 100%; height: 480px;"></div>
                 </div>
-                
-                <h2>Conclusion</h2>
-                <p>En 2025, la progression des IA offensives est plus rapide, car moins régulée, mais les IA défensives gagnent en efficacité grâce aux investissements des grandes entreprises. Cette lutte acharnée instaure une “guerre d’adaptation” permanente entre IA d’attaque et IA de défense.</p>
+                <div style="font-size:12px; margin-top:10px; font-style:italic; text-align:center;">
+                    Sources : ENEA, Microsoft, World Economic Forum
+                </div>
+
+                <div class="highlight">
+                    <p><strong>Lecture du graphique :</strong> Chaque axe correspond à un critère : vitesse, efficacité, accessibilité, innovation et adaptation. L’IA offensive est plus rapide et innovante, l’IA défensive plus efficace et mieux adaptée. Plus la courbe se rapproche de 5, plus l’efficacité est grande.</p>
+                </div>
+
+                <section>
+                    <h2>La bataille d’adaptation des IA</h2>
+                    <p>En 2025, la progression des IA offensives est plus rapide, car moins régulée, mais les IA défensives gagnent en efficacité grâce aux investissements des grandes entreprises. Cette lutte acharnée instaure une “guerre d’adaptation” permanente entre IA d’attaque et IA de défense.</p>
+                </section>
             </section>
         </article>
 
@@ -102,111 +129,109 @@
         <p>&copy; 2025 Cyber @rticle - Tous droits réservés.</p>
     </footer>
 
-    <script>
-        // SCRIPT POUR L'ANIMATION DES COMPTEURS
-        const counters = document.querySelectorAll('.counter');
-        
-        // Fonction d'animation du compteur (déclenchée au chargement)
-        const animate = (counter) => {
-            const target = +counter.getAttribute('data-target');
-            let count = 0;
-            const speed = 100; 
-            const increment = target / speed;
-
-            const updateCount = () => {
-                count += increment;
-                if (count < target) {
-                    // Utilise Math.ceil pour s'assurer que le nombre entier augmente
-                    counter.innerText = Math.ceil(count).toLocaleString('fr-FR');
-                    requestAnimationFrame(updateCount);
-                } else {
-                    // Finalisation des valeurs complexes (K, Milliards, Jours)
-                    let finalValue = target.toLocaleString('fr-FR');
-                    // Adaptation pour les valeurs spécifiques
-                    if(target === 69) finalValue = "69";
-                    if(target === 13) finalValue = "13 Milliards";
-                    if(target === 108 || target === 21) finalValue = `${target} Jours`;
-                    
-                    counter.innerText = finalValue;
-                }
-            };
-            requestAnimationFrame(updateCount);
-        };
-        
-
-        counters.forEach(counter => animate(counter));
-
-
-
-        
-
-        function drawChart() {
-            if (!document.getElementById('chart_div')) return;
-            
-            var data = google.visualization.arrayToDataTable([
-              ['Critere', 'IA Offensive', { role: 'tooltip', p: {html: true} }, 'IA Defensive', { role: 'tooltip', p: {html: true} }],
-              ['Vitesse d\'evolution', 5,
-               '<div style="padding:5px 10px;"><b>Vitesse d\'evolution - Offensive</b><br>L\'IA permet une explosion rapide et personnalisee des attaques (phishing credible, deepfakes, generation automatique de malwares).</div>',
-               4.6,
-               '<div style="padding:5px 10px;"><b>Vitesse d\'evolution - Defensive</b><br>Les IA defensives se perfectionnent pour identifier les nouvelles menaces avant exploitation.</div>'
-              ],
-              ['Efficacite actuelle', 3.2,
-               '<div style="padding:5px 10px;"><b>Efficacite actuelle - Offensive</b><br>Exploitation rapide des vulnerabilites avec un taux de reussite superieur aux attaques manuelles.</div>',
-               4.4,
-               '<div style="padding:5px 10px;"><b>Efficacite actuelle - Defensive</b><br>Solutions efficaces mais mise en place couteuse et technique.</div>'
-              ],
-              ['Accessibilite', 4,
-               '<div style="padding:5px 10px;"><b>Accessibilite - Offensive</b><br>Outils d\'attaque IA de plus en plus accessibles, notamment sur le dark web.</div>',
-               3,
-               '<div style="padding:5px 10px;"><b>Accessibilite - Defensive</b><br>Accessible principalement aux grandes entreprises avec ressources techniques et financieres.</div>'
-              ],
-              ['Innovation', 4,
-               '<div style="padding:5px 10px;"><b>Innovation - Offensive</b><br>Creation d\'attaques inedites (faux visages, faux mails, imitation voix).</div>',
-               3.7,
-               '<div style="padding:5px 10px;"><b>Innovation - Defensive</b><br>Detection automatique d\'anomalies et blocage immediat des connexions suspectes.</div>'
-              ],
-              ['Adaptation 2025', 4.5,
-               '<div style="padding:5px 10px;"><b>Adaptation 2025 - Offensive</b><br>IA apprend des defenses et adapte ses techniques en temps reel.</div>',
-               4.7,
-               '<div style="padding:5px 10px;"><b>Adaptation 2025 - Defensive</b><br>Anticipe comportements suspects via analyse de millions de scenarios.</div>'
-              ]
-            ]);
-
-            var options = {
-              title: 'Comparaison IA Offensive vs IA Defensive',
-              height: 480,
-              width: '100%',
-              tooltip: { isHtml: true },
-              vAxis: {
-                minValue: 0,
-                maxValue: 5,
-                title: 'Score de 0 à 5',
-                format: '0.0'
-              },
-              hAxis: {
-                slantedText: true,
-                slantedTextAngle: 35,
-                textStyle: {
-                  fontSize: 13
-                }
-              },
-              colors: ['#FF69B4', '#8A2BE2'],
-              legend: { position: 'top' },
-              pointSize: 8,
-              curveType: 'function'
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
+      <script>
+    // Animation des compteurs
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const animate = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText.replace(/\s/g, '');
+        const speed = 200; // ajuster la vitesse ici
+        const increment = target / speed;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(animate, 10);
+        } else {
+          counter.innerText = target.toLocaleString('fr-FR');
         }
-        
+      };
+      animate();
+    });
 
-        google.charts.load('current', {'packages':['corechart']});
-        
+    // Gestion des popups sur les termes cliquables
+    document.querySelectorAll('.clickable-term').forEach(term => {
+      term.addEventListener('click', e => {
+        e.stopPropagation();
+        const popup = term.querySelector('.popup');
+        // Fermer toutes les autres popups
+        document.querySelectorAll('.popup').forEach(p => {
+          if (p !== popup) p.style.display = 'none';
+        });
+        // Toggle affichage popup
+        popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+      });
+    });
 
-        google.charts.setOnLoadCallback(drawChart);
+    // Fermer popup au clic ailleurs
+    document.body.addEventListener('click', () => {
+      document.querySelectorAll('.popup').forEach(popup => {
+        popup.style.display = 'none';
+      });
+    });
+  </script>
 
-    </script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Critere', 'IA Offensive', { role: 'tooltip', p: {html: true} }, 'IA Défensive', { role: 'tooltip', p: {html: true} }],
+        ['Vitesse d\'évolution', 5,
+         '<div style="padding:5px 10px;"><b>Vitesse d\'évolution - Offensive</b><br>L\'IA permet une explosion rapide et personnalisée des attaques (phishing crédible, deepfakes, génération automatique de malwares).</div>',
+         4.6,
+         '<div style="padding:5px 10px;"><b>Vitesse d\'evolution - Défensive</b><br>Les IA défensives se perfectionnent pour identifier les nouvelles menaces avant exploitation.</div>'
+        ],
+        ['Efficacité actuelle', 3.2,
+         '<div style="padding:5px 10px;"><b>Efficacité actuelle - Offensive</b><br>Exploitation rapide des vulnérabilités avec un taux de réussite supérieur aux attaques manuelles.</div>',
+         4.4,
+         '<div style="padding:5px 10px;"><b>Efficacité actuelle - Défensive</b><br>Solutions efficaces mais mise en place coûteuse et technique.</div>'
+        ],
+        ['Accessibilité', 4,
+         '<div style="padding:5px 10px;"><b>Accessibilité - Offensive</b><br>Outils d\'attaque IA de plus en plus accessibles, notamment sur le dark web.</div>',
+         3,
+         '<div style="padding:5px 10px;"><b>Accessibilité - Défensive</b><br>Accessible principalement aux grandes entreprises avec ressources techniques et financières.</div>'
+        ],
+        ['Innovation', 4,
+         '<div style="padding:5px 10px;"><b>Innovation - Offensive</b><br>Création d\'attaques inédites (faux visages, faux mails, imitation voix).</div>',
+         3.7,
+         '<div style="padding:5px 10px;"><b>Innovation - Défensive</b><br>Détection automatique d\'anomalies et blocage immédiat des connexions suspectes.</div>'
+        ],
+        ['Adaptation 2025', 4.5,
+         '<div style="padding:5px 10px;"><b>Adaptation 2025 - Offensive</b><br>IA apprend des défenses et adapte ses techniques en temps réel.</div>',
+         4.7,
+         '<div style="padding:5px 10px;"><b>Adaptation 2025 - Défensive</b><br>Anticipe comportements suspects via analyse de millions de scénarios.</div>'
+        ]
+      ]);
+
+      var options = {
+        title: 'Comparaison IA Offensive vs IA Défensive',
+        height: 480,
+        width: '100%',
+        tooltip: { isHtml: true },
+        vAxis: {
+          minValue: 0,
+          maxValue: 5,
+          title: 'Score de 0 à 5',
+          format: '0.0'
+        },
+        hAxis: {
+          slantedText: true,
+          slantedTextAngle: 35,
+          textStyle: {
+            fontSize: 13
+          }
+        },
+        colors: ['#FF69B4', '#8A2BE2'], 
+        legend: { position: 'top' },
+        pointSize: 8,
+        curveType: 'function'
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
 </body>
 </html>
 </body>
