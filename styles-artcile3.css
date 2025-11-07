@@ -1,0 +1,70 @@
+
+
+/* --- Styles Contenus dans l'Article (colonne gauche) --- */
+.unique-style-3 h2 {
+    /* Style unique des titres de l'article 3 */
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: #4a4a4a !important; /* Couleur plus foncée */
+    border-left: 4px solid #7c3aed !important; /* Bordure VIOLETTE unique */
+    padding-left: 0.8rem;
+    /* Annule le style de article.css */
+    border-color: #7c3aed !important;
+}
+
+/* Bloc de statistiques */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.stat {
+    background: #f9f7ff; /* Fond légèrement mauve */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.counter {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #7c3aed; /* VIOLET pour le compteur */
+    display: block;
+}
+
+.stat p {
+    margin-top: 0.4rem;
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Encadré Highlight (citation/note) */
+.highlight {
+    background: #f3f0ff;
+    padding: 1rem 1.2rem;
+    border-left: 5px solid #7c3aed; /* VIOLET pour la bordure */
+    margin: 2rem 0 1.5rem;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+/* Sources */
+.text-sources {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 100%; /* Prend la largeur disponible */
+}
